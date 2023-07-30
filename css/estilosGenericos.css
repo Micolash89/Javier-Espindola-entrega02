@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+/*
+    font-family: 'Montserrat', sans-serif;
+*/
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*
+    utility class
+*/
+
+.titulo1{
+    font-size: 1.5rem;
+}
+
+.texto1{
+    font-size: 1.125rem;
+}
+
+.texto3{
+    font-size: .875rem;
+}
+
+.titulo2,.texto2{
+    font-size: 1rem;
+}
+
+.titulo1,.titulo2{
+    font-weight: 600;
+}
+
+.texto1,.texto2,.texto3{
+    font-weight: 500;
+}
+
+.titulo1,.titulo2,.texto1,.texto2,.texto3{
+    font-style: normal;
+    line-height: normal;
+}

@@ -1,0 +1,16 @@
+/*
+:root modifica todo elemento que ya se encuentra dentro del HTML
+*/
+:root{
+    /*Declarar variables*/
+    /* --txt-blanco: #FFFFFF;
+    --txt-negro: #000000; */
+    --bg-beige: #F3EBEB;
+    --bg-celeste: #2F80ED;
+    --bg-grisClaro: #C4C4C4;
+    --bg-grisMedio: #828282;
+    --bg-grisOscuro: #4F4F4F;
+
+    --bd-radius1: 12px;
+    --bd-pag: 4px;
+}

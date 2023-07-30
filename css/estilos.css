@@ -1,0 +1,44 @@
+
+
+/* Estilos base para móvil (Mobile First) */
+.container {
+    max-width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 24px;
+  }
+  
+  .content {
+    font-size: 16px;
+  }
+  
+  /* Estilos para pantalla mediana */
+  @media screen and (min-width: 768px) {
+    .title {
+      font-size: 32px;
+    }
+  
+    .content {
+      font-size: 18px;
+    }
+  }
+  
+  /* Estilos para escritorio */
+  @media screen and (min-width: 1024px) {
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+  
+    .title {
+      font-size: 48px;
+    }
+  
+    .content {
+      font-size: 20px;
+    }
+  }
+  
