@@ -4,6 +4,39 @@
 
 @media (min-width: 1400px) {
 
+    .header{
+        flex-direction: row;
+        padding: 32px;
+        gap: 32px;
+        align-items: center;
+    }
+
+    
+    .header__section2 {
+        align-items: center;
+        margin: 0 10%;
+    }
+
+    .header__section2--div1{
+        flex-direction: row;
+        /* align-items: end; */
+        width: 100%;
+        justify-content: space-between;
+        
+        
+    }
+
+    .headerDiv2__p2{
+        display: flex;
+    }
+
+    .headerDiv1__div1,.headerDiv1__div2{
+        gap: 0;
+    }
 
 
+
+    .header__section2--div1{
+
+    }
 }
