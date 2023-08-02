@@ -165,7 +165,7 @@ body {
 
 /*BOTONES*/
 .mainDiv__div--button,
-.footer__section--button,.section6Div1__div3--button,.section6Div2__div3--button,.section6Div3__div3--button {
+.footer__section--button,.section6Div1__div3--button,.section6Div2__div3--button,.section6Div3__div3--button,.section3Div__div3--button {
   font-family: "Montserrat", sans-serif;
   color: var(--bg-grisOscuro);
   background-color: white;
@@ -175,19 +175,19 @@ body {
   border: 2px solid var(--bg-grisOscuro);
 }
 
-.section6Div1__div3--button,.section6Div2__div3--button,.section6Div3__div3--button {
-  padding: 12px 43.5px;
+.section6Div1__div3--button,.section6Div2__div3--button,.section6Div3__div3--button,.section3Div__div3--button {
+  padding: 12px 43.5px;/*puede ser este pading q me arruina el tamaño de los botones*/
 }
 
 
 .footer__section--button:hover,
-.mainDiv__div--button:hover,.section6Div1__div3--button:hover,.section6Div2__div3--button:hover,.section6Div3__div3--button:hover {
+.mainDiv__div--button:hover,.section6Div1__div3--button:hover,.section6Div2__div3--button:hover,.section6Div3__div3--button:hover,.section3Div__div3--button:hover {
   border-color: var(--bg-celeste);
   color: var(--bg-celeste);
 }
 
 .footer__section--button:active,
-.mainDiv__div--button:active,.section6Div1__div3--button:active,.section6Div2__div3--button:active,.section6Div3__div3--button:active {
+.mainDiv__div--button:active,.section6Div1__div3--button:active,.section6Div2__div3--button:active,.section6Div3__div3--button:active,.section3Div__div3--button:active {
   border-color: var(--bg-celeste);
   background-color: var(--bg-celeste);
   color: white;
@@ -261,7 +261,7 @@ body {
   border-radius: var(--bd-pag);
 }
 
-.main__section6{
+.main__section6,.main__section3{
 
   
   display: flex;
@@ -271,7 +271,7 @@ body {
 
 }
 
-.main__section6--div{
+.main__section6--div,.main__section3--div {
   background-color: white;
   padding: 16px;
   border-radius: var(--bd-radius1);
@@ -280,7 +280,7 @@ body {
   gap: 16px;
 }
 
-.section6Div1__div1,.section6Div2__div1,.section6Div3__div1{
+.section6Div1__div1,.section6Div2__div1,.section6Div3__div1,.section3Div__div1{
   height: 100%;
   width: 100%;
   overflow: hidden;
@@ -295,7 +295,7 @@ body {
   display: none;
 }
 
-.section6Div1__div2,.section6Div2__div2,.section6Div3__div2{
+.section6Div1__div2,.section6Div2__div2,.section6Div3__div2,.section3Div__div2{
 
   display: flex;
   flex-direction: column;
@@ -304,17 +304,17 @@ body {
 
 }
 
-.section6Div1__div3,.section6Div2__div3,.section6Div3__div3{
+.section6Div1__div3,.section6Div2__div3,.section6Div3__div3,.section3Div__div3{
   display: flex;
   flex-direction: row;
   gap: 16px;
 }
 
-.section6Div1__p,.section6Div2__p ,.section6Div3__p {
+.section6Div1__p,.section6Div2__p ,.section6Div3__p,.section3Div__p {
   color: var(--bg-grisMedio);
 }
 
-.section6Div1__div2--span,.section6Div2__div2--span,.section6Div3__div2--span{
+.section6Div1__div2--span,.section6Div2__div2--span,.section6Div3__div2--span,.section3Div__div2--span{
   color: var(--bg-grisOscuro);
 }
 /*
@@ -364,9 +364,6 @@ desktop
   justify-content: center;
 }
 
-.section4Div1__div1{
-
-}
 
 .section4Div2__div1,.section4Div1__div1{
   display: flex;
@@ -391,4 +388,7 @@ desktop
 
 .main__section3{
   display: none;
+}
+.section6Div3__p{
+
 }
