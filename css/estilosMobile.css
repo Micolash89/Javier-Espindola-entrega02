@@ -2,6 +2,9 @@
 @import url(estilosGenericos.css);
 @import url(estilosDesktop.css);
 
+
+
+
 body {
   display: flex;
   /*poner todo en forma de columnas*/
@@ -23,7 +26,6 @@ body {
 }
 
 .header__section1 {
-
   display: flex;
   justify-content: center;
   overflow: hidden;
@@ -48,10 +50,8 @@ body {
 
 .headerDiv1__div1,
 .headerDiv1__div2 {
-
   display: flex;
   flex-direction: column;
-
   gap: 8px;
 }
 
@@ -125,25 +125,21 @@ body {
   background: var(--bg-grisClaro);
 }
 .range1 {
-  grid-template-columns: 95% 
-  auto;
-  
-  
+  grid-template-columns:
+    95%
+    auto;
 }
 
 .range2 {
   grid-template-columns: 80% auto;
-  
 }
 
 .range3 {
   grid-template-columns: 90% auto;
-  
 }
 
 .range4 {
   grid-template-columns: 80% auto;
-  
 }
 
 .range1__div,
@@ -174,7 +170,11 @@ body {
 
 /*BOTONES*/
 .mainDiv__div--button,
-.footer__section--button,.section6Div1__div3--button,.section6Div2__div3--button,.section6Div3__div3--button,.section3Div__div3--button {
+.footer__section--button,
+.section6Div1__div3--button,
+.section6Div2__div3--button,
+.section6Div3__div3--button,
+.section3Div__div3--button {
   font-family: "Montserrat", sans-serif;
   color: var(--bg-grisOscuro);
   background-color: white;
@@ -184,19 +184,29 @@ body {
   border: 2px solid var(--bg-grisOscuro);
 }
 
-.section6Div1__div3--button,.section6Div2__div3--button,.section6Div3__div3--button,.section3Div__div3--button {
-  padding: 12px 43.5px;/*puede ser este pading q me arruina el tamaño de los botones*/
+.section6Div1__div3--button,
+.section6Div2__div3--button,
+.section6Div3__div3--button,
+.section3Div__div3--button {
+  padding: 12px 43.5px; /*puede ser este pading q me arruina el tamaño de los botones*/
 }
 
-
 .footer__section--button:hover,
-.mainDiv__div--button:hover,.section6Div1__div3--button:hover,.section6Div2__div3--button:hover,.section6Div3__div3--button:hover,.section3Div__div3--button:hover {
+.mainDiv__div--button:hover,
+.section6Div1__div3--button:hover,
+.section6Div2__div3--button:hover,
+.section6Div3__div3--button:hover,
+.section3Div__div3--button:hover {
   border-color: var(--bg-celeste);
   color: var(--bg-celeste);
 }
 
 .footer__section--button:active,
-.mainDiv__div--button:active,.section6Div1__div3--button:active,.section6Div2__div3--button:active,.section6Div3__div3--button:active,.section3Div__div3--button:active {
+.mainDiv__div--button:active,
+.section6Div1__div3--button:active,
+.section6Div2__div3--button:active,
+.section6Div3__div3--button:active,
+.section3Div__div3--button:active {
   border-color: var(--bg-celeste);
   background-color: var(--bg-celeste);
   color: white;
@@ -213,8 +223,9 @@ body {
   color: var(--bg-grisOscuro);
 }
 
-.section2DivDiv1__div1,.section2DivDiv2__div1,
-.section2DivDiv3__div1{
+.section2DivDiv1__div1,
+.section2DivDiv2__div1,
+.section2DivDiv3__div1 {
   border: 1px solid var(--bg-grisClaro);
   border-radius: var(--bd-radius1);
 }
@@ -225,16 +236,16 @@ body {
   color: var(--bg-grisMedio);
 }
 
-.section2DivDiv1,.section2DivDiv2,
+.section2DivDiv1,
+.section2DivDiv2,
 .section2DivDiv3 {
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
 
-.section2Div__div{
+.section2Div__div {
   align-self: center;
-
 }
 
 .section2DivDiv1__div,
@@ -282,16 +293,23 @@ body {
   border-radius: var(--bd-pag);
 }
 
-.main__section6,.main__section3{
-
+.main__section6,
+.main__section3 {
   display: flex;
   flex-direction: column;
-  gap :16px;
+  gap: 16px;
   background-color: var(--bg-beige);
-
 }
 
-.main__section6--div,.main__section3--div {
+.section6Div1__div1--img,
+.section6Div2__div1--img,
+.section6Div3__div1--img {
+  border-radius: var(--bd-radius1);
+  border: 1px solid var(--bg-grisClaro);
+}
+
+.main__section6--div,
+.main__section3--div {
   background-color: white;
   padding: 16px;
   border-radius: var(--bd-radius1);
@@ -301,47 +319,66 @@ body {
 }
 /*imagenes*/
 
-.section2DivDiv1__div1--img,.section2DivDiv2__div1--img,.section2DivDiv3__div1--img{
+.section2DivDiv1__div1--img,
+.section2DivDiv2__div1--img,
+.section2DivDiv3__div1--img {
   display: flex;
   justify-content: center;
   overflow: hidden;
   border-radius: var(--bd-radius1);
 }
 
-.section6Div1__div1,.section6Div2__div1,.section6Div3__div1,.section3Div__div1,.section2DivDiv1__div1--img,.section2DivDiv2__div1--img,.section2DivDiv3__div1--img{
+.section6Div1__div1,
+.section6Div2__div1,
+.section6Div3__div1,
+.section3Div__div1,
+.section2DivDiv1__div1--img,
+.section2DivDiv2__div1--img,
+.section2DivDiv3__div1--img {
   height: 100%;
   width: 100%;
   overflow: hidden;
   display: flex;
- justify-content: center;
- border-radius: var(--bd-radius1);
- /* order: -1 ; */
+  justify-content: center;
+  border-radius: var(--bd-radius1);
+  /* order: -1 ; */
 }
 
-.section6Div2,.section6Div3{
+.section6Div2,
+.section6Div3 {
   display: none;
 }
 
-.section6Div1__div2,.section6Div2__div2,.section6Div3__div2,.section3Div__div2{
-
+.section6Div1__div2,
+.section6Div2__div2,
+.section6Div3__div2,
+.section3Div__div2 {
   display: flex;
   flex-direction: column;
   gap: 16px;
   padding: 8px 0;
-
 }
 
-.section6Div1__div3,.section6Div2__div3,.section6Div3__div3,.section3Div__div3{
+.section6Div1__div3,
+.section6Div2__div3,
+.section6Div3__div3,
+.section3Div__div3 {
   display: flex;
   flex-direction: row;
   gap: 16px;
 }
 
-.section6Div1__p,.section6Div2__p ,.section6Div3__p,.section3Div__p {
+.section6Div1__p,
+.section6Div2__p,
+.section6Div3__p,
+.section3Div__p {
   color: var(--bg-grisMedio);
 }
 
-.section6Div1__div2--span,.section6Div2__div2--span,.section6Div3__div2--span,.section3Div__div2--span{
+.section6Div1__div2--span,
+.section6Div2__div2--span,
+.section6Div3__div2--span,
+.section3Div__div2--span {
   color: var(--bg-grisOscuro);
 }
 /*
@@ -356,72 +393,104 @@ desktop
 }
 */
 
-.main__section4{
+.main__section4 {
   display: flex;
   flex-direction: column;
   padding: 16px;
   gap: 16px;
 }
 
-
-.main__section4--div{
+.main__section4--div {
   display: flex;
-  flex-direction: column ;
+  flex-direction: column;
   padding: 0 16px;
   gap: 16px;
 }
 
-.section4__div1,.section4__div2{
+.section4__div1,
+.section4__div2 {
   display: flex;
   padding: 8px;
   border: 1px solid var(--bg-grisMedio);
   border-radius: var(--bd-radius1);
-  
 }
 
-.section4__div1--div,.section4__div1--p,
-.section4__div2--div,.section4__div2--p
-{
+.section4__div1--div,
+.section4__div1--p,
+.section4__div2--div,
+.section4__div2--p {
   display: flex;
   flex-direction: column;
   gap: 6px;
-  width: 50%; 
+  width: 50%;
   margin: 15% 0;
   justify-content: center;
 }
 
 /*adidas*/
-.section4Div2__div1,.section4Div1__div1{
+.section4Div2__div1,
+.section4Div1__div1 {
   display: flex;
   justify-content: center;
   overflow: hidden;
-  
 }
 
-.section4Div1__div2,.section4Div2__div2{
+.section4Div1__div2,
+.section4Div2__div2 {
   display: flex;
   flex-direction: column;
   margin: auto;
 }
 
-.section4__div2--p,.section4Div2__div2--span,
-.section4__div1--p,.section4Div1__div2--span 
- {
+.section4__div2--p,
+.section4Div2__div2--span,
+.section4__div1--p,
+.section4Div1__div2--span {
   color: var(--bg-grisMedio);
 }
 
-.section4__div2{
+.section4__div2 {
   display: none;
 }
 
-.footer{
- display: none; 
-}
-
-.main__section3{
+.footer {
   display: none;
 }
-.section6Div3__p{
+
+.main__section3 {
+  display: none;
+}
+.section6Div3__p {
+}
+
+
+@media (max-width:739px){
+
+  .section6Div1__div1{
+    border: 1px solid var(--bg-grisClaro);
+    border-radius: var(--bd-radius1);
+  }
+
+  .section6Div1__div1--img{
+    border: none;
+  }
 
 }
 
+@media (max-width:441px){
+
+  .mainDiv__div{
+    flex-wrap: wrap;
+    row-gap: 16px;
+  }
+
+}
+
+@media (max-width:336px){
+
+  .section6Div1__div3{
+    flex-wrap: wrap;
+    row-gap: 16px;
+  }
+
+}
