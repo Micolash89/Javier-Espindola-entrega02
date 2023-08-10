@@ -2,9 +2,6 @@
 @import url(estilosGenericos.css);
 @import url(estilosDesktop.css);
 
-
-
-
 body {
   display: flex;
   /*poner todo en forma de columnas*/
@@ -26,9 +23,17 @@ body {
 }
 
 .header__section1 {
-  display: flex;
-  justify-content: center;
-  overflow: hidden;
+
+  background-image: url("/images/fotoPerfil.jpeg");
+  width: 340px;
+  height: 340px;
+  background-position: center -40px;
+  border-radius: var(--bd-radius1);
+  margin: auto;
+  background-repeat: no-repeat;
+}
+
+.header__section1--img{  
   border-radius: var(--bd-radius1);
 }
 
@@ -108,7 +113,6 @@ body {
   display: grid;
   grid-template-columns: 40% 60%;
   grid-template-rows: auto auto auto auto;
-  /* gap: 8px; */
   row-gap: 8px;
   color: var(--bg-grisMedio);
 }
@@ -118,7 +122,7 @@ body {
 .range3,
 .range4 {
   align-self: center;
-  height: 50%;
+  height: 30%;
   display: grid;
 
   grid-row: auto;
@@ -131,6 +135,7 @@ body {
 }
 
 .range2 {
+
   grid-template-columns: 80% auto;
 }
 
@@ -146,7 +151,7 @@ body {
 .range2__div,
 .range3__div,
 .range4__div {
-  padding: 8px 0px 8px 16px;
+  
   width: auto;
   height: auto;
   background-color: var(--bg-celeste);
@@ -188,7 +193,7 @@ body {
 .section6Div2__div3--button,
 .section6Div3__div3--button,
 .section3Div__div3--button {
-  padding: 12px 43.5px; /*puede ser este pading q me arruina el tamaño de los botones*/
+  padding: 12px 43.5px;
 }
 
 .footer__section--button:hover,
@@ -226,6 +231,7 @@ body {
 .section2DivDiv1__div1,
 .section2DivDiv2__div1,
 .section2DivDiv3__div1 {
+  padding: 0 20px;
   border: 1px solid var(--bg-grisClaro);
   border-radius: var(--bd-radius1);
 }
@@ -325,7 +331,7 @@ body {
   display: flex;
   justify-content: center;
   overflow: hidden;
-  border-radius: var(--bd-radius1);
+  
 }
 
 .section6Div1__div1,
@@ -340,8 +346,13 @@ body {
   overflow: hidden;
   display: flex;
   justify-content: center;
+}
+
+.section6Div1__div1,
+.section6Div2__div1,
+.section6Div3__div1,
+.section3Div__div1{
   border-radius: var(--bd-radius1);
-  /* order: -1 ; */
 }
 
 .section6Div2,
@@ -381,17 +392,6 @@ body {
 .section3Div__div2--span {
   color: var(--bg-grisOscuro);
 }
-/*
-desktop
-.main__section6--div{
-  background-color: white;
-  padding: 16px 48px 32px;
-  border-radius: var(--bd-radius1);
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-*/
 
 .main__section4 {
   display: flex;
@@ -493,4 +493,12 @@ desktop
     row-gap: 16px;
   }
 
+}
+
+@media (max-width:404px){
+
+  .header__section1 {
+    width: 100%;
+    background-position: center -40px;
+  }
 }
