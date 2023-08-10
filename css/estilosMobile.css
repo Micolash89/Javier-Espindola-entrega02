@@ -29,7 +29,8 @@ body {
   height: 340px;
   background-position: center -40px;
   border-radius: var(--bd-radius1);
-  margin: auto;
+  /* margin: auto; */
+  align-self: center;
   background-repeat: no-repeat;
 }
 

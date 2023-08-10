@@ -41,7 +41,7 @@
   .main {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr (1/2) fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr (1/2)fr 1fr;
     gap: 32px;
   }
 
