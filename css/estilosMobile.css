@@ -24,7 +24,7 @@ body {
 
 .header__section1 {
 
-  background-image: url("/images/fotoPerfil1.jpg");
+  background-image: url("../images/fotoPerfil.jpeg");
   width: 340px;
   height: 340px;
   background-position: center -40px;
