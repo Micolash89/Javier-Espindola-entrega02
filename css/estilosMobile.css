@@ -23,18 +23,16 @@ body {
 }
 
 .header__section1 {
-
   background-image: url("../images/fotoPerfil.jpeg");
   width: 340px;
   height: 340px;
   background-position: center -40px;
   border-radius: var(--bd-radius1);
-  /* margin: auto; */
   align-self: center;
   background-repeat: no-repeat;
 }
 
-.header__section1--img{  
+.header__section1--img {
   border-radius: var(--bd-radius1);
 }
 
@@ -110,6 +108,18 @@ body {
   gap: 16px;
 }
 
+.section2Div__div--div {
+
+}
+
+.section2Div{
+
+}
+
+.section2DivDiv2__h3{
+
+}
+
 .mainDiv1__div {
   display: grid;
   grid-template-columns: 40% 60%;
@@ -136,7 +146,6 @@ body {
 }
 
 .range2 {
-
   grid-template-columns: 80% auto;
 }
 
@@ -152,7 +161,6 @@ body {
 .range2__div,
 .range3__div,
 .range4__div {
-  
   width: auto;
   height: auto;
   background-color: var(--bg-celeste);
@@ -227,6 +235,10 @@ body {
 
 .section2Div {
   color: var(--bg-grisOscuro);
+}
+
+.section2DivDiv1__h3,.section2DivDiv2__h3,.section2DivDiv3__h3{
+  color: black;
 }
 
 .section2DivDiv1__div1,
@@ -332,7 +344,6 @@ body {
   display: flex;
   justify-content: center;
   overflow: hidden;
-  
 }
 
 .section6Div1__div1,
@@ -352,7 +363,7 @@ body {
 .section6Div1__div1,
 .section6Div2__div1,
 .section6Div3__div1,
-.section3Div__div1{
+.section3Div__div1 {
   border-radius: var(--bd-radius1);
 }
 
@@ -406,6 +417,10 @@ body {
   flex-direction: column;
   padding: 0 16px;
   gap: 16px;
+}
+
+.main__section4--h3{
+  color: var(--bg-grisOscuro);
 }
 
 .section4__div1,
@@ -465,39 +480,33 @@ body {
 }
 
 
-@media (max-width:739px){
-
-  .section6Div1__div1{
+@media (max-width: 818px) {
+  
+  .section6Div1__div1 {
     border: 1px solid var(--bg-grisClaro);
     border-radius: var(--bd-radius1);
   }
 
-  .section6Div1__div1--img{
+  .section6Div1__div1--img {
     border: none;
   }
-
 }
 
-@media (max-width:441px){
-
-  .mainDiv__div{
+@media (max-width: 441px) {
+  .mainDiv__div {
     flex-wrap: wrap;
     row-gap: 16px;
   }
-
 }
 
-@media (max-width:336px){
-
-  .section6Div1__div3{
+@media (max-width: 336px) {
+  .section6Div1__div3 {
     flex-wrap: wrap;
     row-gap: 16px;
   }
-
 }
 
-@media (max-width:404px){
-
+@media (max-width: 404px) {
   .header__section1 {
     width: 100%;
     background-position: center -40px;
