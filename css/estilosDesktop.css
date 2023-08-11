@@ -4,7 +4,7 @@
 
 @media (min-width: 1440px) {
   .header__section1 {
-    width: 550px;
+    width: 570px;
     height: 350px;
     max-width: 357px;
   }
@@ -18,7 +18,7 @@
 
   .header__section2 {
     align-items: center;
-    margin-right: 300px;
+    margin-right: 250px;
     gap: 60px;
   }
 
