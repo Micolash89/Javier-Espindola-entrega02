@@ -20,7 +20,7 @@ En Classroom se adjuntará el link de la tag y el link al sitio web creado con G
 - ***Integrador resuelto:***:
 - ***Github Pages***: https://micolash89.github.io/Javier-Espindola-entrega01/
 ---
-- ***Diseño mobile***:
+- ***Diseño mobile***:<br>
   <img src ="images/mobile.PNG">
-- ***Diseño desktop***:
+- ***Diseño desktop***:<br>
   <img src ="images/desktop.PNG">
