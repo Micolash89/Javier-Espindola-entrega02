@@ -21,8 +21,8 @@ En Classroom se adjuntará el link de la tag y el link al sitio web creado con G
 - ***Github Pages***: https://micolash89.github.io/Javier-Espindola-entrega01/
 ---
 - ***Diseño mobile***:
-- </br>
+  </br>
   <img src ="images/mobile.PNG">
 - ***Diseño desktop***:
-  -</br>
+  </br>
   <img src ="images/desktop.PNG">
