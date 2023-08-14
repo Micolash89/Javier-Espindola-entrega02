@@ -14,7 +14,7 @@ En Classroom se adjuntará el link de la tag y el link al sitio web creado con G
 4.Aplicación de nomenclatura BEM - Opcional
 5.Aplicación de los breakpoints según la modalidad de trabajo mobile first
 6.Correcto uso de GitHub
-- ***¡Importante!*** - Al momento de calificar se tendrá en consideración la entrega de los trabajos propuestos en el Alumni en aquellos casos en que no se llegue con la nota para aprobar.  En ningún caso la no entrega de los mismos descontará puntos.
+- ***Importante*** - Al momento de calificar se tendrá en consideración la entrega de los trabajos propuestos en el Alumni en aquellos casos en que no se llegue con la nota para aprobar.  En ningún caso la no entrega de los mismos descontará puntos.
 
 ---
 - ***Ejercicio resuelto***:
