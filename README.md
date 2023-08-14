@@ -18,4 +18,4 @@ En Classroom se adjuntará el link de la tag y el link al sitio web creado con G
 
 ---
 - ***Ejercicio resuelto***:
-- ***Github Pages: https://micolash89.github.io/Javier-Espindola-entrega01/
+- ***Github Pages***: https://micolash89.github.io/Javier-Espindola-entrega01/
