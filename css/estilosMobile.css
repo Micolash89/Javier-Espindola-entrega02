@@ -9,6 +9,7 @@ body {
   padding: 16px;
   gap: 24px;
   background-color: var(--bg-beige);
+  /* width: 100vw; */
 }
 
 /*HEADER*/
