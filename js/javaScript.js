@@ -36,6 +36,7 @@ function miFetch(endPoint) {
 
 ///FUNCIONES QUE SE INVOCAN AL CARGA LA PAGINA////
 
+
 ///CERTIFICADOS
 miFetch("/certificates")
   .then(data => {
@@ -138,7 +139,6 @@ function crearTrifuerza(data, e) {
   if (e != ant) {
     e.classList.add("activado");
     ant.classList.remove("activado");
-    console.log(e);
   }
 }
 
@@ -195,16 +195,17 @@ function crearBotonesPaginado(tam) {
 
 //EVENTO CLICK CONTENEDOR DE LOS BOTONES DEL PÁGINADO 
 contenedorFooter.addEventListener("click", (e) => {
-
-  if (e.target.id == "footer_section") return; //si apreto entre medio de los botones salgo;
-
+  
   const { target: { id } } = e;
+
+  if (id == "footer_section") return; //si apreto entre medio de los botones salgo;
+
   const tam = vec.length;
   let inicio;//inicio del vector
   let fin;//fin del vector
 
-  inicio = bloque * 3 - 3;
-  fin = bloque * 3;
+  inicio = bloque * 3 - 3; //calculo el inicio del vector
+  fin = bloque * 3;//calculo el final del vector
 
   btnTam = Math.ceil(tam / 3) + 1 //"boton >, next" o siguiente
 
@@ -213,23 +214,25 @@ contenedorFooter.addEventListener("click", (e) => {
   switch (id) {
     case "btn0"://primer boton "<"
       if (inicio > 0) {
-        inicio = (--bloque) * 3 - 3;
+        inicio = (--bloque) * 3 - 3; // cambio la posicion del bloque a -1
         fin = (bloque) * 3;
         titulos.innerHTML = vec.slice(inicio, fin).join(""); 
         ant.classList.add("activado");
       }
+      console.log("el n 1")
       break;
 
     case "btn" + btnTam: //ultimo boton ">"
       if (fin < tam) {
-        inicio = (++bloque) * 3 - 3; ///terneario con tam
-        fin = (bloque) * 3;//tenearui con tam
+        inicio = (++bloque) * 3 - 3; // cambio la posicion del bloque a +1
+        fin = (bloque) * 3;//
         titulos.innerHTML = vec.slice(inicio, fin).join("");
       } else {
         if (inicio < tam) {
           titulos.innerHTML = vec.slice(inicio, tam).join("");
         }
       }
+      console.log("el n 2")
       break;
 
     default: //cualquier otro boton del paginado (numero)
@@ -243,44 +246,45 @@ contenedorFooter.addEventListener("click", (e) => {
         else {
           titulos.innerHTML = vec.slice(inicio, fin).join("");
         }
-      }
-      if (botonesPaginado[bloque] != btnPaginadoAnt) {
-        botonesPaginado[bloque].classList.add("activado");
-        btnPaginadoAnt.classList.remove("activado");
-        btnPaginadoAnt = botonesPaginado[bloque];
+        if (botonesPaginado[bloque] != btnPaginadoAnt) {
+          botonesPaginado[bloque].classList.add("activado");
+          btnPaginadoAnt.classList.remove("activado");
+          btnPaginadoAnt = botonesPaginado[bloque];
+        }
+        console.log("el n 3")
       }
   }
 })
 
-///activar y desactivar el background del paginado
 ///ACTIVAR Y DESACTIVAR EL BACGROUND DEL LA PAGINACION
 function activarPaginado(e) {
 
   const { target: { id } } = e;
 
   botonesPaginado = document.querySelectorAll(".footer__section--button"); //leo los botones y lo almaceno en un array
-  btnPreview = botonesPaginado[0];
-  btnNext = botonesPaginado[botonesPaginado.length - 1];
- 
-  if (id != btnPreview.id && id != btnNext.id) {
+  btnPreview = botonesPaginado[0]; ///boton "<"
+  btnNext = botonesPaginado[botonesPaginado.length - 1]; //boton ">"
+
+  if (id != btnPreview.id && id != btnNext.id) {/// no es ninguno de los 2 botones
     botonesPaginado.forEach(element => element.classList.remove("activado"));
     e.target.classList.add("activado");
     bloqueBtn = Number(id.charAt(id.length - 1))
 
-  } else if (e.target.id == botonesPaginado[0].id && !botonesPaginado[1].classList.contains("activado")) {
+  } else if (id == botonesPaginado[0].id && !botonesPaginado[1].classList.contains("activado")) { //es el ">" y el boton 1 no tiene la clase activado
     botonesPaginado.forEach(element => element.classList.remove("activado"));
     botonesPaginado[--bloqueBtn].classList.add("activado");
-
-  } else if (id == botonesPaginado[botonesPaginado.length - 1].id && !botonesPaginado[botonesPaginado.length - 2].classList.contains("activado")) {
+    
+  } else if (id == botonesPaginado[botonesPaginado.length - 1].id && !botonesPaginado[botonesPaginado.length - 2].classList.contains("activado")&& bloqueBtn<botonesPaginado.length) { //es el ">" y el ultimo boton no tiene la clase activado
     botonesPaginado.forEach(element => element.classList.remove("activado"));
     botonesPaginado[++bloqueBtn].classList.add("activado");
   }
 
 }
 
-//BOTON 1 GUARDARLO COMO ANTERIOR Y AGREGARLE LA CLASE ACTIVO 
+//REINICIO VARIALBES Y ACTIVO EL PRIMER BOTON DEL PAGINADO
 function activarBtn1() {
   btnPaginadoAnt = document.getElementById("btn1");
   btnPaginadoAnt.classList.add("activado");
-  bloque = 1;
+  bloque = 1; 
+  bloqueBtn = 1;
 }
