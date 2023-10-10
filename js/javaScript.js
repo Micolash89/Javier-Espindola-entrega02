@@ -219,7 +219,6 @@ contenedorFooter.addEventListener("click", (e) => {
         titulos.innerHTML = vec.slice(inicio, fin).join(""); 
         ant.classList.add("activado");
       }
-      console.log("el n 1")
       break;
 
     case "btn" + btnTam: //ultimo boton ">"
@@ -232,7 +231,6 @@ contenedorFooter.addEventListener("click", (e) => {
           titulos.innerHTML = vec.slice(inicio, tam).join("");
         }
       }
-      console.log("el n 2")
       break;
 
     default: //cualquier otro boton del paginado (numero)
@@ -251,7 +249,6 @@ contenedorFooter.addEventListener("click", (e) => {
           btnPaginadoAnt.classList.remove("activado");
           btnPaginadoAnt = botonesPaginado[bloque];
         }
-        console.log("el n 3")
       }
   }
 })
